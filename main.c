@@ -9,20 +9,7 @@
 /*
 #include <stdio.h>
 
-
-int main(int argc, const char * argv[]) {
-    
-    printf("What OS are You Running?\n");
-    
-    return 0;
-    
-}
-
-*/
-
-#include <stdio.h>
-
-#define MAX_LIMIT 7 // MAX INPUT SHOULD BE WINDOWS
+#define MAX_LIMIT 10
 
 int main() {
     
@@ -36,6 +23,33 @@ int main() {
     
     printf("%s", str);
     
+    printf("\n");
+    
+    return 0;
+    
+}
+*/
+
+#include <stdio.h>
+
+#define MAX_LIMIT 10
+
+int main() {
+    
+    char str[MAX_LIMIT];
+    
+    printf("What OS are you running?\n");
+    
+    printf("Example: WINDOWS, LINUX, MACOS\n");
+    
+    fgets(str, MAX_LIMIT, stdin);
+    /*
+    if (str == "WINDOWS") {
+        
+        printf("SUCCESS");
+        
+    }
+    */
     return 0;
     
 }
