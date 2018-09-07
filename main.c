@@ -6,50 +6,38 @@
 //  Copyright © 2018 Larson Carter. All rights reserved.
 //
 
-/*
 #include <stdio.h>
 
 #define MAX_LIMIT 10
 
 int main() {
     
-    char str[MAX_LIMIT];
+    printf("What OS are you running?\n");   //  Initial Question
     
-    printf("What OS are you running?\n");
+    printf("Example: WINDOWS, LINUX, MACOS\n"); //  Display Options
     
-    printf("Example: WINDOWS, LINUX, MACOS\n");
+    char os[10];
     
-    fgets(str, MAX_LIMIT, stdin);
+    scanf("%s",os);
     
-    printf("%s", str);
-    
-    printf("\n");
-    
-    return 0;
-    
-}
-*/
-
-#include <stdio.h>
-
-#define MAX_LIMIT 10
-
-int main() {
-    
-    char str[MAX_LIMIT];
-    
-    printf("What OS are you running?\n");
-    
-    printf("Example: WINDOWS, LINUX, MACOS\n");
-    
-    fgets(str, MAX_LIMIT, stdin);
-    /*
-    if (str == "WINDOWS") {
+    if (strcmp(os, "WINDOWS") == 0) {
         
-        printf("SUCCESS");
+        printf("SUCCESS-W \n");
+        
+    } else if (strcmp(os, "LINUX") == 0) {
+        
+        printf("SUCCESS-L \n");
+        
+    } else if (strcmp(os, "MACOS") == 0) {
+        
+        printf("SUCCESS-M \n");
+        
+    } else {
+        
+        printf("ERROR: 1 \n");
         
     }
-    */
+    
     return 0;
     
 }
