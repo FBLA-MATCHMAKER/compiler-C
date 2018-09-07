@@ -12,9 +12,9 @@
 
 int main() {
     
-    printf("What OS are you running?\n");   //  Initial Question
+    printf("What OS are you running?\n");
     
-    printf("Example: WINDOWS, LINUX, MACOS\n"); //  Display Options
+    printf("Example: WINDOWS, LINUX, MACOS\n");
     
     char os[10];
     
@@ -22,15 +22,15 @@ int main() {
     
     if (strcmp(os, "WINDOWS") == 0) {
         
-        printf("SUCCESS-W \n");
+        printf("SUCCESS-W \n"); // Change To Download For Windows
         
     } else if (strcmp(os, "LINUX") == 0) {
         
-        printf("SUCCESS-L \n");
+        printf("SUCCESS-L \n"); // Change To Download For Linux
         
     } else if (strcmp(os, "MACOS") == 0) {
         
-        printf("SUCCESS-M \n");
+        printf("SUCCESS-M \n"); // Change To Download For MacOS
         
     } else {
         
