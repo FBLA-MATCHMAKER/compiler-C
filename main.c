@@ -20,15 +20,15 @@ int main() {
     
     scanf("%s",os);
     
-    if (strcmp(os, "WINDOWS") == 0) {
+    if (strcmp(os, "WINDOWS") == 0 || strcmp(os, "windows") == 0) {
         
         printf("SUCCESS-W \n"); // Change To Download For Windows
         
-    } else if (strcmp(os, "LINUX") == 0) {
+    } else if (strcmp(os, "LINUX") == 0 || strcmp(os, "linux") == 0) {
         
         printf("SUCCESS-L \n"); // Change To Download For Linux
         
-    } else if (strcmp(os, "MACOS") == 0) {
+    } else if (strcmp(os, "MACOS") == 0 || strcmp(os, "macos") == 0) {
         
         printf("SUCCESS-M \n"); // Change To Download For MacOS
         
