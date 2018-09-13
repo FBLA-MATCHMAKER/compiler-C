@@ -8,6 +8,8 @@
 
 #include <stdio.h>
 
+#include <string.h>
+
 #define MAX_LIMIT 10
 
 int main() {
@@ -22,15 +24,21 @@ int main() {
     
     if (strcmp(os, "WINDOWS") == 0 || strcmp(os, "windows") == 0) {
         
-        printf("SUCCESS-W \n"); // Change To Download For Windows
+        printf("Go to Documentation Repo on GitHub. \n"); // Change To Download For Windows
+        
+        //  This Will Be Continued
         
     } else if (strcmp(os, "LINUX") == 0 || strcmp(os, "linux") == 0) {
         
-        printf("SUCCESS-L \n"); // Change To Download For Linux
+        printf("Go to https://goo.gl/zNY46D \n"); // Change To Download For Linux
+        
+        printf("Open LINUX.md and follow instructions \n");
         
     } else if (strcmp(os, "MACOS") == 0 || strcmp(os, "macos") == 0) {
         
-        printf("SUCCESS-M \n"); // Change To Download For MacOS
+        printf("Go to https://goo.gl/zNY46D \n"); // Change To Download For MacOS
+        
+        printf("Open MACOS.md and follow instructions \n");
         
     } else {
         
